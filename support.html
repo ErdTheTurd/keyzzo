@@ -1,38 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support — Keyzzo</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Get help with Keyzzo. Email support@keyzzo.com.">
+  <link rel="canonical" href="https://erdtheturd.github.io/keyzzo/support.html">
+  <meta name="theme-color" content="#f3ead4">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Keyzzo">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://erdtheturd.github.io/keyzzo/support.html">
+  <meta property="og:title" content="Support — Keyzzo">
+  <meta property="og:description" content="Get help with Keyzzo. Email support@keyzzo.com.">
+  <meta property="og:image" content="https://erdtheturd.github.io/keyzzo/assets/favicon.svg">
+  <meta property="og:image:alt" content="Keyzzo mark">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Support — Keyzzo">
+  <meta name="twitter:description" content="Get help with Keyzzo. Email support@keyzzo.com.">
+  <meta name="twitter:image" content="https://erdtheturd.github.io/keyzzo/assets/favicon.svg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,SOFT,wght@9..144,30,500;9..144,40,600;9..144,50,700&family=Nunito+Sans:opsz,wght@6..12,500;6..12,600;6..12,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="index.html">Keyzzo</a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="./">
+        <img class="brand-mark" src="assets/favicon.svg" width="28" height="28" alt="">
+        <span>Keyzzo</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="./">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="support.html" aria-current="page">Support</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="wrap prose">
-    <h1>Support</h1>
-    <p>Need help with Keyzzo or have feedback on a build? Reach out anytime.</p>
+  <main id="main" class="page">
+    <div class="page-narrow">
+      <h1>Support</h1>
+      <p class="lede">Questions or feedback about a build? Email <a href="mailto:support@keyzzo.com">support@keyzzo.com</a>. Include your device model and iOS version if something is misbehaving.</p>
 
-    <h2>Contact</h2>
-    <p>Email <a href="mailto:support@keyzzo.com">support@keyzzo.com</a> with your device model and iOS version.</p>
-
-    <h2>Quick Tips</h2>
-    <p>Switch between Wide Mode and Duet Mode from the top bar. Toggle note labels and sustain directly above the keyboard, and adjust octaves independently for each player in Duet Mode.</p>
+      <h2>Using the app</h2>
+      <div class="faq">
+        <details open>
+          <summary>How do I switch between Wide and Duet?</summary>
+          <p>Use the Wide / Duet control in the top bar. In face-to-face Duet on a regular iPhone, that control sits in the bar between the two keyboards, so neither player has upside-down chrome.</p>
+        </details>
+        <details>
+          <summary>How do octaves work?</summary>
+          <p>Each keyboard has an Octave control, from C1 to C6. Wide Mode opens on C3. In Duet Mode the top or Left keyboard opens on C4, and the bottom or Right keyboard opens on C3. The two sides are independent.</p>
+        </details>
+        <details>
+          <summary>Where are Sustain and note labels?</summary>
+          <p>Sustain is a button in the same bar as the mode switch. Note Labels and Show Octave are in the ••• menu. All Notes Off is there too, if a note gets stuck.</p>
+        </details>
+        <details>
+          <summary>Does Keyzzo need the internet?</summary>
+          <p>No. The synth runs on the device, and the app is designed to work offline.</p>
+        </details>
+        <details>
+          <summary>Does it collect data?</summary>
+          <p>No. See the <a href="privacy.html">Privacy Policy</a>.</p>
+        </details>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <div class="wrap footer-row">
-      <span>© 2026 Keyzzo</span>
-      <span><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a></span>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 Edward Dunn. Keyzzo for iPhone.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:support@keyzzo.com">support@keyzzo.com</a>
+      </div>
     </div>
   </footer>
 </body>
