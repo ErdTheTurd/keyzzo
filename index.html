@@ -1,65 +1,467 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Keyzzo — Dual-Screen Piano for iPhone Duo</title>
-  <meta name="description" content="Play across both screens or face-to-face in Duet Mode. Low-latency offline piano built for iPhone Duo and iPhone.">
-  <link rel="stylesheet" href="styles.css">
+  <title>Keyzzo — a piano across both screens</title>
+  <meta name="description" content="Keyzzo is a piano for iPhone Duo and iPhone. Wide Mode runs one keyboard across both screens. Duet Mode gives two players their own keys. A built-in synth, offline, with no data collected.">
+  <link rel="canonical" href="https://erdtheturd.github.io/keyzzo/">
+  <meta name="theme-color" content="#f3ead4">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Keyzzo">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://erdtheturd.github.io/keyzzo/">
+  <meta property="og:title" content="Keyzzo — a piano across both screens">
+  <meta property="og:description" content="Keyzzo is a piano for iPhone Duo and iPhone. Wide Mode runs one keyboard across both screens. Duet Mode gives two players their own keys. A built-in synth, offline, with no data collected.">
+  <meta property="og:image" content="https://erdtheturd.github.io/keyzzo/assets/favicon.svg">
+  <meta property="og:image:alt" content="Keyzzo mark">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Keyzzo — a piano across both screens">
+  <meta name="twitter:description" content="Keyzzo is a piano for iPhone Duo and iPhone. Wide Mode runs one keyboard across both screens. Duet Mode gives two players their own keys. A built-in synth, offline, with no data collected.">
+  <meta name="twitter:image" content="https://erdtheturd.github.io/keyzzo/assets/favicon.svg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,SOFT,wght@9..144,30,500;9..144,40,600;9..144,50,700&family=Nunito+Sans:opsz,wght@6..12,500;6..12,600;6..12,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="index.html">Keyzzo</a>
-      <nav class="nav-links">
-        <a href="#modes">Modes</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
-    </div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="./" aria-current="page">
+        <img class="brand-mark" src="assets/favicon.svg" width="28" height="28" alt="">
+        <span>Keyzzo</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="./" aria-current="page">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="wrap">
+  <main id="main">
     <section class="hero">
-      <span class="badge">Built for iPhone Duo &amp; iPhone</span>
-      <h1>Two screens. One expressive piano.</h1>
-      <p class="lead">
-        Keyzzo turns your iPhone Duo into a wide multi-octave keyboard or a face-to-face duet piano—with low-latency audio that works completely offline.
-      </p>
-      <div class="keyboard-art" aria-hidden="true">
-        <div class="keys">
-          <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+      <div class="wrap hero-copy">
+        <p class="wordmark">Keyzzo</p>
+        <h1>A piano that spans both screens.</h1>
+        <p class="lede">On iPhone Duo, Wide Mode runs one keyboard across the fold. Duet Mode gives each person their own keys. On a regular iPhone the same two modes stack: a single keyboard, or two players facing each other.</p>
+        <p class="device-note">For iPhone Duo and iPhone. Sound comes from a built-in synth. It works offline, and it does not collect data.</p>
+      </div>
+    </section>
+
+    <section class="showcase" aria-label="Wide Mode on iPhone Duo">
+      <div class="wrap-wide">
+        <figure class="device">
+          <div class="device-frame duo">
+            <div class="screen-clip">
+              
+      <div class="app-screen">
+        <div class="app-chrome">
+          <span class="app-wordmark wordmark-lg">Keyzzo</span>
+          <div class="mode-picker"><span class="mode-pill is-on">Wide</span><span class="mode-pill">Duet</span></div>
+          <span class="sustain">Sustain</span>
+          <span class="opts" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="8" cy="12" r="1.15" fill="currentColor"/><circle cx="12" cy="12" r="1.15" fill="currentColor"/><circle cx="16" cy="12" r="1.15" fill="currentColor"/></svg>
+          </span>
         </div>
-        <div class="hinge"></div>
-        <div class="keys">
-          <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+        <div class="octave-bar">
+          <span class="ob-title">Full Canvas</span>
+          <span class="ob-spacer"></span>
+          <span class="ob-label">Octave</span>
+          <span class="ob-btn" aria-hidden="true">−</span>
+          <span class="ob-oct">C3</span>
+          <span class="ob-btn" aria-hidden="true">+</span>
+        </div>
+        <div class="kb-wrap kb-wrap-wide">
+          <div class="kb" style="--whites:28">
+        <div class="kb-whites">
+          <div class="wkey" data-note="C3"><span class="klabel klabel-c">C3</span></div>
+          <div class="wkey" data-note="D3"></div>
+          <div class="wkey" data-note="E3"></div>
+          <div class="wkey" data-note="F3"></div>
+          <div class="wkey" data-note="G3"></div>
+          <div class="wkey" data-note="A3"></div>
+          <div class="wkey" data-note="B3"></div>
+          <div class="wkey pressed" data-note="C4"><span class="klabel klabel-c">C4</span></div>
+          <div class="wkey" data-note="D4"></div>
+          <div class="wkey pressed" data-note="E4"></div>
+          <div class="wkey" data-note="F4"></div>
+          <div class="wkey pressed" data-note="G4"></div>
+          <div class="wkey" data-note="A4"></div>
+          <div class="wkey" data-note="B4"></div>
+          <div class="wkey" data-note="C5"><span class="klabel klabel-c">C5</span></div>
+          <div class="wkey" data-note="D5"></div>
+          <div class="wkey" data-note="E5"></div>
+          <div class="wkey" data-note="F5"></div>
+          <div class="wkey" data-note="G5"></div>
+          <div class="wkey" data-note="A5"></div>
+          <div class="wkey" data-note="B5"></div>
+          <div class="wkey" data-note="C6"><span class="klabel klabel-c">C6</span></div>
+          <div class="wkey" data-note="D6"></div>
+          <div class="wkey" data-note="E6"></div>
+          <div class="wkey" data-note="F6"></div>
+          <div class="wkey" data-note="G6"></div>
+          <div class="wkey" data-note="A6"></div>
+          <div class="wkey" data-note="B6"></div>
+        </div>
+        <div class="bkey" data-note="C#3" style="left:3.5714%"></div>
+        <div class="bkey" data-note="D#3" style="left:7.1429%"></div>
+        <div class="bkey" data-note="F#3" style="left:14.2857%"></div>
+        <div class="bkey" data-note="G#3" style="left:17.8571%"></div>
+        <div class="bkey" data-note="A#3" style="left:21.4286%"></div>
+        <div class="bkey" data-note="C#4" style="left:28.5714%"></div>
+        <div class="bkey" data-note="D#4" style="left:32.1429%"></div>
+        <div class="bkey" data-note="F#4" style="left:39.2857%"></div>
+        <div class="bkey" data-note="G#4" style="left:42.8571%"></div>
+        <div class="bkey" data-note="A#4" style="left:46.4286%"></div>
+        <div class="bkey" data-note="C#5" style="left:53.5714%"></div>
+        <div class="bkey" data-note="D#5" style="left:57.1429%"></div>
+        <div class="bkey" data-note="F#5" style="left:64.2857%"></div>
+        <div class="bkey" data-note="G#5" style="left:67.8571%"></div>
+        <div class="bkey" data-note="A#5" style="left:71.4286%"></div>
+        <div class="bkey" data-note="C#6" style="left:78.5714%"></div>
+        <div class="bkey" data-note="D#6" style="left:82.1429%"></div>
+        <div class="bkey" data-note="F#6" style="left:89.2857%"></div>
+        <div class="bkey" data-note="G#6" style="left:92.8571%"></div>
+        <div class="bkey" data-note="A#6" style="left:96.4286%"></div>
+      </div>
+        </div>
+      </div>
+            </div>
+            <div class="hinge" aria-hidden="true"></div>
+          </div>
+          <figcaption class="caption">Wide Mode on iPhone Duo — a CSS mockup of the app, not a screenshot. 28 white keys from C3, under the Full Canvas bar.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="pair">
+      <div class="wrap pair-grid">
+        <figure class="device">
+          <div class="device-frame phone">
+            <div class="screen-clip">
+              
+      <div class="app-screen app-duet">
+        <div class="duet-half is-rotated">
+          <div class="octave-bar">
+          <span class="ob-title">Player A</span>
+          <span class="ob-spacer"></span>
+          <span class="ob-label">Octave</span>
+          <span class="ob-btn" aria-hidden="true">−</span>
+          <span class="ob-oct">C4</span>
+          <span class="ob-btn" aria-hidden="true">+</span>
+        </div>
+          <div class="kb-wrap">
+            <div class="kb" style="--whites:12">
+        <div class="kb-whites">
+          <div class="wkey" data-note="C4"><span class="klabel klabel-c">C4</span></div>
+          <div class="wkey" data-note="D4"></div>
+          <div class="wkey pressed" data-note="E4"></div>
+          <div class="wkey" data-note="F4"></div>
+          <div class="wkey pressed" data-note="G4"></div>
+          <div class="wkey" data-note="A4"></div>
+          <div class="wkey pressed" data-note="B4"></div>
+          <div class="wkey" data-note="C5"><span class="klabel klabel-c">C5</span></div>
+          <div class="wkey" data-note="D5"></div>
+          <div class="wkey" data-note="E5"></div>
+          <div class="wkey" data-note="F5"></div>
+          <div class="wkey" data-note="G5"></div>
+        </div>
+        <div class="bkey" data-note="C#4" style="left:8.3333%"></div>
+        <div class="bkey" data-note="D#4" style="left:16.6667%"></div>
+        <div class="bkey" data-note="F#4" style="left:33.3333%"></div>
+        <div class="bkey" data-note="G#4" style="left:41.6667%"></div>
+        <div class="bkey" data-note="A#4" style="left:50.0000%"></div>
+        <div class="bkey" data-note="C#5" style="left:66.6667%"></div>
+        <div class="bkey" data-note="D#5" style="left:75.0000%"></div>
+        <div class="bkey" data-note="F#5" style="left:91.6667%"></div>
+      </div>
+          </div>
+        </div>
+        <div class="app-chrome app-chrome-bridge">
+          <span class="app-wordmark wordmark-sm muted">Keyzzo</span>
+          <div class="mode-picker"><span class="mode-pill">Wide</span><span class="mode-pill is-on">Duet</span></div>
+          <span class="sustain">Sustain</span>
+          <span class="opts" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="8" cy="12" r="1.15" fill="currentColor"/><circle cx="12" cy="12" r="1.15" fill="currentColor"/><circle cx="16" cy="12" r="1.15" fill="currentColor"/></svg>
+          </span>
+        </div>
+        <div class="duet-half">
+          <div class="octave-bar">
+          <span class="ob-title">Player B</span>
+          <span class="ob-spacer"></span>
+          <span class="ob-label">Octave</span>
+          <span class="ob-btn" aria-hidden="true">−</span>
+          <span class="ob-oct">C3</span>
+          <span class="ob-btn" aria-hidden="true">+</span>
+        </div>
+          <div class="kb-wrap">
+            <div class="kb" style="--whites:12">
+        <div class="kb-whites">
+          <div class="wkey pressed" data-note="C3"><span class="klabel klabel-c">C3</span></div>
+          <div class="wkey" data-note="D3"></div>
+          <div class="wkey pressed" data-note="E3"></div>
+          <div class="wkey" data-note="F3"></div>
+          <div class="wkey pressed" data-note="G3"></div>
+          <div class="wkey" data-note="A3"></div>
+          <div class="wkey" data-note="B3"></div>
+          <div class="wkey" data-note="C4"><span class="klabel klabel-c">C4</span></div>
+          <div class="wkey" data-note="D4"></div>
+          <div class="wkey" data-note="E4"></div>
+          <div class="wkey" data-note="F4"></div>
+          <div class="wkey" data-note="G4"></div>
+        </div>
+        <div class="bkey" data-note="C#3" style="left:8.3333%"></div>
+        <div class="bkey" data-note="D#3" style="left:16.6667%"></div>
+        <div class="bkey" data-note="F#3" style="left:33.3333%"></div>
+        <div class="bkey" data-note="G#3" style="left:41.6667%"></div>
+        <div class="bkey" data-note="A#3" style="left:50.0000%"></div>
+        <div class="bkey" data-note="C#4" style="left:66.6667%"></div>
+        <div class="bkey" data-note="D#4" style="left:75.0000%"></div>
+        <div class="bkey" data-note="F#4" style="left:91.6667%"></div>
+      </div>
+          </div>
+        </div>
+      </div>
+            </div>
+          </div>
+          <figcaption class="caption">Duet Mode on iPhone. Player A’s half is rotated 180° so someone across the table can play.</figcaption>
+        </figure>
+
+        <div class="pair-copy">
+          <h2>Two players, one phone.</h2>
+          <p>In Duet Mode each person gets a keyboard and their own octave control. On a regular iPhone they sit top and bottom, with the mode switch and Sustain in a bar between them. On an open Duo they sit Left and Right, both upright, 15 white keys each.</p>
+          <figure class="device">
+            <div class="device-frame duo">
+              <div class="screen-clip">
+                
+      <div class="app-screen">
+        <div class="app-chrome">
+          <span class="app-wordmark wordmark-lg">Keyzzo</span>
+          <div class="mode-picker"><span class="mode-pill">Wide</span><span class="mode-pill is-on">Duet</span></div>
+          <span class="sustain">Sustain</span>
+          <span class="opts" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="8" cy="12" r="1.15" fill="currentColor"/><circle cx="12" cy="12" r="1.15" fill="currentColor"/><circle cx="16" cy="12" r="1.15" fill="currentColor"/></svg>
+          </span>
+        </div>
+        <div class="duet-sidebyside">
+          <div class="duet-half">
+            <div class="octave-bar">
+          <span class="ob-title">Left</span>
+          <span class="ob-spacer"></span>
+          <span class="ob-label">Octave</span>
+          <span class="ob-btn" aria-hidden="true">−</span>
+          <span class="ob-oct">C4</span>
+          <span class="ob-btn" aria-hidden="true">+</span>
+        </div>
+            <div class="kb-wrap">
+              <div class="kb" style="--whites:15">
+        <div class="kb-whites">
+          <div class="wkey" data-note="C4"><span class="klabel klabel-c">C4</span></div>
+          <div class="wkey" data-note="D4"></div>
+          <div class="wkey" data-note="E4"></div>
+          <div class="wkey" data-note="F4"></div>
+          <div class="wkey" data-note="G4"></div>
+          <div class="wkey" data-note="A4"></div>
+          <div class="wkey" data-note="B4"></div>
+          <div class="wkey pressed" data-note="C5"><span class="klabel klabel-c">C5</span></div>
+          <div class="wkey" data-note="D5"></div>
+          <div class="wkey" data-note="E5"></div>
+          <div class="wkey" data-note="F5"></div>
+          <div class="wkey" data-note="G5"></div>
+          <div class="wkey" data-note="A5"></div>
+          <div class="wkey" data-note="B5"></div>
+          <div class="wkey" data-note="C6"><span class="klabel klabel-c">C6</span></div>
+        </div>
+        <div class="bkey" data-note="C#4" style="left:6.6667%"></div>
+        <div class="bkey" data-note="D#4" style="left:13.3333%"></div>
+        <div class="bkey" data-note="F#4" style="left:26.6667%"></div>
+        <div class="bkey" data-note="G#4" style="left:33.3333%"></div>
+        <div class="bkey" data-note="A#4" style="left:40.0000%"></div>
+        <div class="bkey" data-note="C#5" style="left:53.3333%"></div>
+        <div class="bkey" data-note="D#5" style="left:60.0000%"></div>
+        <div class="bkey" data-note="F#5" style="left:73.3333%"></div>
+        <div class="bkey" data-note="G#5" style="left:80.0000%"></div>
+        <div class="bkey" data-note="A#5" style="left:86.6667%"></div>
+      </div>
+            </div>
+          </div>
+          <div class="duet-half">
+            <div class="octave-bar">
+          <span class="ob-title">Right</span>
+          <span class="ob-spacer"></span>
+          <span class="ob-label">Octave</span>
+          <span class="ob-btn" aria-hidden="true">−</span>
+          <span class="ob-oct">C3</span>
+          <span class="ob-btn" aria-hidden="true">+</span>
+        </div>
+            <div class="kb-wrap">
+              <div class="kb" style="--whites:15">
+        <div class="kb-whites">
+          <div class="wkey" data-note="C3"><span class="klabel klabel-c">C3</span></div>
+          <div class="wkey" data-note="D3"></div>
+          <div class="wkey" data-note="E3"></div>
+          <div class="wkey" data-note="F3"></div>
+          <div class="wkey pressed" data-note="G3"></div>
+          <div class="wkey" data-note="A3"></div>
+          <div class="wkey pressed" data-note="B3"></div>
+          <div class="wkey" data-note="C4"><span class="klabel klabel-c">C4</span></div>
+          <div class="wkey pressed" data-note="D4"></div>
+          <div class="wkey" data-note="E4"></div>
+          <div class="wkey" data-note="F4"></div>
+          <div class="wkey" data-note="G4"></div>
+          <div class="wkey" data-note="A4"></div>
+          <div class="wkey" data-note="B4"></div>
+          <div class="wkey" data-note="C5"><span class="klabel klabel-c">C5</span></div>
+        </div>
+        <div class="bkey" data-note="C#3" style="left:6.6667%"></div>
+        <div class="bkey" data-note="D#3" style="left:13.3333%"></div>
+        <div class="bkey" data-note="F#3" style="left:26.6667%"></div>
+        <div class="bkey" data-note="G#3" style="left:33.3333%"></div>
+        <div class="bkey" data-note="A#3" style="left:40.0000%"></div>
+        <div class="bkey" data-note="C#4" style="left:53.3333%"></div>
+        <div class="bkey" data-note="D#4" style="left:60.0000%"></div>
+        <div class="bkey" data-note="F#4" style="left:73.3333%"></div>
+        <div class="bkey" data-note="G#4" style="left:80.0000%"></div>
+        <div class="bkey" data-note="A#4" style="left:86.6667%"></div>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+              </div>
+              <div class="hinge" aria-hidden="true"></div>
+            </div>
+            <figcaption class="caption">Duet Mode on iPhone Duo — Left starts at C4, Right at C3.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section id="modes" class="section">
-      <h2>Designed around how you play</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Wide Mode</h3>
-          <p>Stretch a continuous multi-octave keyboard across both Duo screens, or scroll and zoom smoothly on a single-screen iPhone.</p>
+    <section class="pair" style="padding-top:0">
+      <div class="wrap pair-grid">
+        <figure class="device">
+          <div class="device-frame phone">
+            <div class="screen-clip">
+              
+      <div class="app-screen">
+        <div class="app-chrome">
+          <span class="app-wordmark wordmark-sm">Keyzzo</span>
+          <div class="mode-picker"><span class="mode-pill is-on">Wide</span><span class="mode-pill">Duet</span></div>
+          <span class="sustain">Sustain</span>
+          <span class="opts" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="8" cy="12" r="1.15" fill="currentColor"/><circle cx="12" cy="12" r="1.15" fill="currentColor"/><circle cx="16" cy="12" r="1.15" fill="currentColor"/></svg>
+          </span>
         </div>
-        <div class="card">
-          <h3>Duet Mode</h3>
-          <p>Each player gets their own keyboard facing them, with independent octave controls—split across both Duo screens or top-and-bottom on iPhone.</p>
+        <div class="octave-bar">
+          <span class="ob-title">Keyboard</span>
+          <span class="ob-spacer"></span>
+          <span class="ob-label">Octave</span>
+          <span class="ob-btn" aria-hidden="true">−</span>
+          <span class="ob-oct">C3</span>
+          <span class="ob-btn" aria-hidden="true">+</span>
         </div>
-        <div class="card">
-          <h3>Low-Latency &amp; Offline</h3>
-          <p>Responsive multitouch chords, glissando, sustain, and note labels powered by an on-device audio engine with no internet connection required.</p>
+        <div class="kb-wrap kb-scroll">
+          <div class="kb" style="--whites:21">
+        <div class="kb-whites">
+          <div class="wkey" data-note="C3"><span class="klabel klabel-c">C3</span></div>
+          <div class="wkey" data-note="D3"></div>
+          <div class="wkey" data-note="E3"></div>
+          <div class="wkey" data-note="F3"></div>
+          <div class="wkey" data-note="G3"></div>
+          <div class="wkey" data-note="A3"></div>
+          <div class="wkey" data-note="B3"></div>
+          <div class="wkey pressed" data-note="C4"><span class="klabel klabel-c">C4</span></div>
+          <div class="wkey" data-note="D4"></div>
+          <div class="wkey pressed" data-note="E4"></div>
+          <div class="wkey" data-note="F4"></div>
+          <div class="wkey pressed" data-note="G4"></div>
+          <div class="wkey" data-note="A4"></div>
+          <div class="wkey" data-note="B4"></div>
+          <div class="wkey" data-note="C5"><span class="klabel klabel-c">C5</span></div>
+          <div class="wkey" data-note="D5"></div>
+          <div class="wkey" data-note="E5"></div>
+          <div class="wkey" data-note="F5"></div>
+          <div class="wkey" data-note="G5"></div>
+          <div class="wkey" data-note="A5"></div>
+          <div class="wkey" data-note="B5"></div>
         </div>
+        <div class="bkey" data-note="C#3" style="left:4.7619%"></div>
+        <div class="bkey" data-note="D#3" style="left:9.5238%"></div>
+        <div class="bkey" data-note="F#3" style="left:19.0476%"></div>
+        <div class="bkey" data-note="G#3" style="left:23.8095%"></div>
+        <div class="bkey" data-note="A#3" style="left:28.5714%"></div>
+        <div class="bkey" data-note="C#4" style="left:38.0952%"></div>
+        <div class="bkey" data-note="D#4" style="left:42.8571%"></div>
+        <div class="bkey" data-note="F#4" style="left:52.3810%"></div>
+        <div class="bkey" data-note="G#4" style="left:57.1429%"></div>
+        <div class="bkey" data-note="A#4" style="left:61.9048%"></div>
+        <div class="bkey" data-note="C#5" style="left:71.4286%"></div>
+        <div class="bkey" data-note="D#5" style="left:76.1905%"></div>
+        <div class="bkey" data-note="F#5" style="left:85.7143%"></div>
+        <div class="bkey" data-note="G#5" style="left:90.4762%"></div>
+        <div class="bkey" data-note="A#5" style="left:95.2381%"></div>
+      </div>
+        </div>
+      </div>
+            </div>
+          </div>
+          <figcaption class="caption">Wide Mode on a regular iPhone. The bar reads Keyboard. You can scroll and zoom; the full span is 21 white keys from C3.</figcaption>
+        </figure>
+        <div class="pair-copy">
+          <h2>The same keyboard, one screen.</h2>
+          <p>Wide Mode on a regular iPhone is a single keyboard you can scroll and zoom, starting at a C you choose. It opens on C3. Octave range is C1 through C6.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="wrap">
+        <div class="features-head">
+          <h2>What’s in the app</h2>
+          <p>Taken from the current build. Nothing more.</p>
+        </div>
+        <ul class="feature-list">
+          <li>
+            <h3>Wide Mode</h3>
+            <p>On an open Duo, 28 white keys run across both screens. On a regular iPhone you get 21, and you can scroll and zoom the keyboard.</p>
+          </li>
+          <li>
+            <h3>Duet Mode</h3>
+            <p>Two independent keyboards. Left and Right on Duo (15 white keys). Player A and Player B on iPhone (12 white keys), with the top half turned to face the other person.</p>
+          </li>
+          <li>
+            <h3>Touch</h3>
+            <p>A multitouch keyboard: chords are several fingers at once, and sliding from one key to the next changes the note. Sustain is a button in the bar. Note labels, with or without the octave number, live in the ••• menu, along with All Notes Off.</p>
+          </li>
+          <li>
+            <h3>Sound</h3>
+            <p>Notes play through a built-in, low-latency synth on the device. There is no account and no network requirement.</p>
+          </li>
+          <li>
+            <h3>No data collected</h3>
+            <p>The app does not collect, store, or share personal data. See the <a href="privacy.html">Privacy Policy</a>.</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footer-row">
-      <span>© 2026 Keyzzo</span>
-      <span><a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></span>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 Edward Dunn. Keyzzo for iPhone.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:support@keyzzo.com">support@keyzzo.com</a>
+      </div>
     </div>
   </footer>
 </body>
